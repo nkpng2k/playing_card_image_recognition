@@ -1,0 +1,925 @@
+Last login: Thu Jun 15 16:49:09 on ttys001
+Nicholass-MacBook-Pro:~ npng$ cd ~/galvanize/
+Nicholass-MacBook-Pro:galvanize npng$ ls
+Analysis_Customer_Interests	python-fundamentals
+DSI Prep			python-fundamentals-nkpng2k
+Dream_3_repository		stock_technical_analysis
+fizzbuzz_interviewquestion.py	try_and_except_practice.py
+galvanize_practice.py
+Nicholass-MacBook-Pro:galvanize npng$ cd python-fundamentals-nkpng2k/
+Nicholass-MacBook-Pro:python-fundamentals-nkpng2k npng$ ls
+README.md	week1		week4
+extra		week2		week5
+introduction	week3		week6
+Nicholass-MacBook-Pro:python-fundamentals-nkpng2k npng$ cd week2
+Nicholass-MacBook-Pro:week2 npng$ ls
+README.md			day4-data_structures_cont
+day3-beyond_numerics		solutions
+Nicholass-MacBook-Pro:week2 npng$ cd solutions
+Nicholass-MacBook-Pro:solutions npng$ ls
+wk2d1_part1-1.py	wk2d1_part2-3.py	wk2d1_part3-3.py
+wk2d1_part1-2.py	wk2d1_part2-4.py	wk2d1_part3-4.py
+wk2d1_part2-1.py	wk2d1_part3-1.py	wk2d2_part2-1.py
+wk2d1_part2-2.py	wk2d1_part3-2.py
+Nicholass-MacBook-Pro:solutions npng$ mkdir wk2d2_solutions
+Nicholass-MacBook-Pro:solutions npng$ ls
+wk2d1_part1-1.py	wk2d1_part2-3.py	wk2d1_part3-3.py
+wk2d1_part1-2.py	wk2d1_part2-4.py	wk2d1_part3-4.py
+wk2d1_part2-1.py	wk2d1_part3-1.py	wk2d2_part2-1.py
+wk2d1_part2-2.py	wk2d1_part3-2.py	wk2d2_solutions
+Nicholass-MacBook-Pro:solutions npng$ mv wk2d1_part1-1.py wk2d2_solutions/
+Nicholass-MacBook-Pro:solutions npng$ ls
+wk2d1_part1-2.py	wk2d1_part2-4.py	wk2d1_part3-4.py
+wk2d1_part2-1.py	wk2d1_part3-1.py	wk2d2_part2-1.py
+wk2d1_part2-2.py	wk2d1_part3-2.py	wk2d2_solutions
+wk2d1_part2-3.py	wk2d1_part3-3.py
+Nicholass-MacBook-Pro:solutions npng$ cd wk2d2_solutions/
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ ls
+wk2d1_part1-1.py
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ cd ..
+Nicholass-MacBook-Pro:solutions npng$ ls
+wk2d1_part1-2.py	wk2d1_part2-4.py	wk2d1_part3-4.py
+wk2d1_part2-1.py	wk2d1_part3-1.py	wk2d2_part2-1.py
+wk2d1_part2-2.py	wk2d1_part3-2.py	wk2d2_solutions
+wk2d1_part2-3.py	wk2d1_part3-3.py
+Nicholass-MacBook-Pro:solutions npng$ mv wk2d1_part1-2.py wk2d2_solutions/
+Nicholass-MacBook-Pro:solutions npng$ ls
+wk2d1_part2-1.py	wk2d1_part3-1.py	wk2d2_part2-1.py
+wk2d1_part2-2.py	wk2d1_part3-2.py	wk2d2_solutions
+wk2d1_part2-3.py	wk2d1_part3-3.py
+wk2d1_part2-4.py	wk2d1_part3-4.py
+Nicholass-MacBook-Pro:solutions npng$ mv wk2d1_part2-1.py wk2d2_solutions/
+Nicholass-MacBook-Pro:solutions npng$ mv wk2d1_part2-2.py wk2d2_solutions/
+Nicholass-MacBook-Pro:solutions npng$ mv wk2d1_part2-3.py wk2d2_solutions/
+Nicholass-MacBook-Pro:solutions npng$ mv wk2d1_part2-4.py wk2d2_solutions/
+Nicholass-MacBook-Pro:solutions npng$ ls
+wk2d1_part3-1.py	wk2d1_part3-3.py	wk2d2_part2-1.py
+wk2d1_part3-2.py	wk2d1_part3-4.py	wk2d2_solutions
+Nicholass-MacBook-Pro:solutions npng$ mv wk2d1_part3-1.py wk2d2_solutions/
+Nicholass-MacBook-Pro:solutions npng$ mv wk2d1_part3-2.py wk2d2_solutions/
+Nicholass-MacBook-Pro:solutions npng$ mv wk2d1_part3-3.py wk2d2_solutions/
+Nicholass-MacBook-Pro:solutions npng$ mv wk2d1_part3-4.py wk2d2_solutions/
+Nicholass-MacBook-Pro:solutions npng$ ls
+wk2d2_part2-1.py	wk2d2_solutions
+Nicholass-MacBook-Pro:solutions npng$ mv wk2d2_solutions/ wk2d1_solutions
+Nicholass-MacBook-Pro:solutions npng$ ls
+wk2d1_solutions		wk2d2_part2-1.py
+Nicholass-MacBook-Pro:solutions npng$ cd wk2d1_solutions/
+Nicholass-MacBook-Pro:wk2d1_solutions npng$ ls
+wk2d1_part1-1.py	wk2d1_part2-3.py	wk2d1_part3-3.py
+wk2d1_part1-2.py	wk2d1_part2-4.py	wk2d1_part3-4.py
+wk2d1_part2-1.py	wk2d1_part3-1.py
+wk2d1_part2-2.py	wk2d1_part3-2.py
+Nicholass-MacBook-Pro:wk2d1_solutions npng$ mkdir wk2d2_solutions
+Nicholass-MacBook-Pro:wk2d1_solutions npng$ ls
+wk2d1_part1-1.py	wk2d1_part2-3.py	wk2d1_part3-3.py
+wk2d1_part1-2.py	wk2d1_part2-4.py	wk2d1_part3-4.py
+wk2d1_part2-1.py	wk2d1_part3-1.py	wk2d2_solutions
+wk2d1_part2-2.py	wk2d1_part3-2.py
+Nicholass-MacBook-Pro:wk2d1_solutions npng$ cd ..
+Nicholass-MacBook-Pro:solutions npng$ ls
+wk2d1_solutions		wk2d2_part2-1.py
+Nicholass-MacBook-Pro:solutions npng$ cd wk2d1_solutions/
+Nicholass-MacBook-Pro:wk2d1_solutions npng$ ls
+wk2d1_part1-1.py	wk2d1_part2-3.py	wk2d1_part3-3.py
+wk2d1_part1-2.py	wk2d1_part2-4.py	wk2d1_part3-4.py
+wk2d1_part2-1.py	wk2d1_part3-1.py	wk2d2_solutions
+wk2d1_part2-2.py	wk2d1_part3-2.py
+Nicholass-MacBook-Pro:wk2d1_solutions npng$ rmdir wk2d2_solutions/
+Nicholass-MacBook-Pro:wk2d1_solutions npng$ ls
+wk2d1_part1-1.py	wk2d1_part2-3.py	wk2d1_part3-3.py
+wk2d1_part1-2.py	wk2d1_part2-4.py	wk2d1_part3-4.py
+wk2d1_part2-1.py	wk2d1_part3-1.py
+wk2d1_part2-2.py	wk2d1_part3-2.py
+Nicholass-MacBook-Pro:wk2d1_solutions npng$ cd ..
+Nicholass-MacBook-Pro:solutions npng$ ls
+wk2d1_solutions		wk2d2_part2-1.py
+Nicholass-MacBook-Pro:solutions npng$ mkdir wk2d2_solutions
+Nicholass-MacBook-Pro:solutions npng$ ls
+wk2d1_solutions		wk2d2_part2-1.py	wk2d2_solutions
+Nicholass-MacBook-Pro:solutions npng$ mv wk2d2_part2-1.py wk2d2_solutions/
+Nicholass-MacBook-Pro:solutions npng$ ls
+wk2d1_solutions	wk2d2_solutions
+Nicholass-MacBook-Pro:solutions npng$ cd wk2d2_solutions/
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ ls
+wk2d2_part2-1.py
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:    ../wk2d1_part1-1.py
+	deleted:    ../wk2d1_part1-2.py
+	deleted:    ../wk2d1_part2-1.py
+	deleted:    ../wk2d1_part2-2.py
+	deleted:    ../wk2d1_part2-3.py
+	deleted:    ../wk2d1_part2-4.py
+	deleted:    ../wk2d1_part3-1.py
+	deleted:    ../wk2d1_part3-2.py
+	deleted:    ../wk2d1_part3-3.py
+	deleted:    ../wk2d1_part3-4.py
+	deleted:    ../wk2d2_part2-1.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	../wk2d1_solutions/
+	./
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ cd ..
+Nicholass-MacBook-Pro:solutions npng$ ls
+wk2d1_solutions	wk2d2_solutions
+Nicholass-MacBook-Pro:solutions npng$ git add wk2d1_solutions
+Nicholass-MacBook-Pro:solutions npng$ ls
+wk2d1_solutions	wk2d2_solutions
+Nicholass-MacBook-Pro:solutions npng$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   wk2d1_solutions/wk2d1_part1-1.py
+	new file:   wk2d1_solutions/wk2d1_part1-2.py
+	new file:   wk2d1_solutions/wk2d1_part2-1.py
+	new file:   wk2d1_solutions/wk2d1_part2-2.py
+	new file:   wk2d1_solutions/wk2d1_part2-3.py
+	new file:   wk2d1_solutions/wk2d1_part2-4.py
+	new file:   wk2d1_solutions/wk2d1_part3-1.py
+	new file:   wk2d1_solutions/wk2d1_part3-2.py
+	new file:   wk2d1_solutions/wk2d1_part3-3.py
+	new file:   wk2d1_solutions/wk2d1_part3-4.py
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:    wk2d1_part1-1.py
+	deleted:    wk2d1_part1-2.py
+	deleted:    wk2d1_part2-1.py
+	deleted:    wk2d1_part2-2.py
+	deleted:    wk2d1_part2-3.py
+	deleted:    wk2d1_part2-4.py
+	deleted:    wk2d1_part3-1.py
+	deleted:    wk2d1_part3-2.py
+	deleted:    wk2d1_part3-3.py
+	deleted:    wk2d1_part3-4.py
+	deleted:    wk2d2_part2-1.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	wk2d2_solutions/
+
+Nicholass-MacBook-Pro:solutions npng$ git commit -m "new file for wk2d1 solutions
+> 
+Nicholass-MacBook-Pro:solutions npng$ git commit -m "new file for wk2d1 solutions"
+[master 6452f21] new file for wk2d1 solutions
+ Committer: Nicholas Png <npng@Nicholass-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 10 files changed, 188 insertions(+)
+ create mode 100644 week2/solutions/wk2d1_solutions/wk2d1_part1-1.py
+ create mode 100644 week2/solutions/wk2d1_solutions/wk2d1_part1-2.py
+ create mode 100644 week2/solutions/wk2d1_solutions/wk2d1_part2-1.py
+ create mode 100644 week2/solutions/wk2d1_solutions/wk2d1_part2-2.py
+ create mode 100644 week2/solutions/wk2d1_solutions/wk2d1_part2-3.py
+ create mode 100644 week2/solutions/wk2d1_solutions/wk2d1_part2-4.py
+ create mode 100644 week2/solutions/wk2d1_solutions/wk2d1_part3-1.py
+ create mode 100644 week2/solutions/wk2d1_solutions/wk2d1_part3-2.py
+ create mode 100644 week2/solutions/wk2d1_solutions/wk2d1_part3-3.py
+ create mode 100644 week2/solutions/wk2d1_solutions/wk2d1_part3-4.py
+Nicholass-MacBook-Pro:solutions npng$ git push
+Counting objects: 5, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 705 bytes | 0 bytes/s, done.
+Total 5 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/nkpng2k/python-fundamentals.git
+   5fde8ae..6452f21  master -> master
+Nicholass-MacBook-Pro:solutions npng$ ls
+wk2d1_solutions	wk2d2_solutions
+Nicholass-MacBook-Pro:solutions npng$ git add wk2d2_solutions/
+Nicholass-MacBook-Pro:solutions npng$ ls
+wk2d1_solutions	wk2d2_solutions
+Nicholass-MacBook-Pro:solutions npng$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   wk2d2_solutions/wk2d2_part2-1.py
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:    wk2d1_part1-1.py
+	deleted:    wk2d1_part1-2.py
+	deleted:    wk2d1_part2-1.py
+	deleted:    wk2d1_part2-2.py
+	deleted:    wk2d1_part2-3.py
+	deleted:    wk2d1_part2-4.py
+	deleted:    wk2d1_part3-1.py
+	deleted:    wk2d1_part3-2.py
+	deleted:    wk2d1_part3-3.py
+	deleted:    wk2d1_part3-4.py
+	deleted:    wk2d2_part2-1.py
+
+Nicholass-MacBook-Pro:solutions npng$ git commit -m "new file for wk2d2 solutions"
+[master d5f5767] new file for wk2d2 solutions
+ Committer: Nicholas Png <npng@Nicholass-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 17 insertions(+)
+ create mode 100644 week2/solutions/wk2d2_solutions/wk2d2_part2-1.py
+Nicholass-MacBook-Pro:solutions npng$ git push
+Counting objects: 5, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 469 bytes | 0 bytes/s, done.
+Total 5 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/nkpng2k/python-fundamentals.git
+   6452f21..d5f5767  master -> master
+Nicholass-MacBook-Pro:solutions npng$ git rm wk2d1_part1-1.py
+rm 'week2/solutions/wk2d1_part1-1.py'
+Nicholass-MacBook-Pro:solutions npng$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	deleted:    wk2d1_part1-1.py
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:    wk2d1_part1-2.py
+	deleted:    wk2d1_part2-1.py
+	deleted:    wk2d1_part2-2.py
+	deleted:    wk2d1_part2-3.py
+	deleted:    wk2d1_part2-4.py
+	deleted:    wk2d1_part3-1.py
+	deleted:    wk2d1_part3-2.py
+	deleted:    wk2d1_part3-3.py
+	deleted:    wk2d1_part3-4.py
+	deleted:    wk2d2_part2-1.py
+
+Nicholass-MacBook-Pro:solutions npng$ git rm wk2d1_part1-2.py
+rm 'week2/solutions/wk2d1_part1-2.py'
+Nicholass-MacBook-Pro:solutions npng$ git rm wk2d1_part2-1.py
+rm 'week2/solutions/wk2d1_part2-1.py'
+Nicholass-MacBook-Pro:solutions npng$ git rm wk2d1_part2-2.py
+rm 'week2/solutions/wk2d1_part2-2.py'
+Nicholass-MacBook-Pro:solutions npng$ git rm wk2d1_part2-3.py
+rm 'week2/solutions/wk2d1_part2-3.py'
+Nicholass-MacBook-Pro:solutions npng$ git rm wk2d1_part2-4.py
+rm 'week2/solutions/wk2d1_part2-4.py'
+Nicholass-MacBook-Pro:solutions npng$ git rm wk2d1_part3-1.py
+rm 'week2/solutions/wk2d1_part3-1.py'
+Nicholass-MacBook-Pro:solutions npng$ git rm wk2d1_part3-2.py
+rm 'week2/solutions/wk2d1_part3-2.py'
+Nicholass-MacBook-Pro:solutions npng$ git rm wk2d1_part3-3.py
+rm 'week2/solutions/wk2d1_part3-3.py'
+Nicholass-MacBook-Pro:solutions npng$ git rm wk2d1_part3-4.py
+rm 'week2/solutions/wk2d1_part3-4.py'
+Nicholass-MacBook-Pro:solutions npng$ git rm wk2d2_part2-1.py
+rm 'week2/solutions/wk2d2_part2-1.py'
+Nicholass-MacBook-Pro:solutions npng$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	deleted:    wk2d1_part1-1.py
+	deleted:    wk2d1_part1-2.py
+	deleted:    wk2d1_part2-1.py
+	deleted:    wk2d1_part2-2.py
+	deleted:    wk2d1_part2-3.py
+	deleted:    wk2d1_part2-4.py
+	deleted:    wk2d1_part3-1.py
+	deleted:    wk2d1_part3-2.py
+	deleted:    wk2d1_part3-3.py
+	deleted:    wk2d1_part3-4.py
+	deleted:    wk2d2_part2-1.py
+
+Nicholass-MacBook-Pro:solutions npng$ git commit -m "removing old files before move"
+[master 0815cb4] removing old files before move
+ Committer: Nicholas Png <npng@Nicholass-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 11 files changed, 205 deletions(-)
+ delete mode 100644 week2/solutions/wk2d1_part1-1.py
+ delete mode 100644 week2/solutions/wk2d1_part1-2.py
+ delete mode 100644 week2/solutions/wk2d1_part2-1.py
+ delete mode 100644 week2/solutions/wk2d1_part2-2.py
+ delete mode 100644 week2/solutions/wk2d1_part2-3.py
+ delete mode 100644 week2/solutions/wk2d1_part2-4.py
+ delete mode 100644 week2/solutions/wk2d1_part3-1.py
+ delete mode 100644 week2/solutions/wk2d1_part3-2.py
+ delete mode 100644 week2/solutions/wk2d1_part3-3.py
+ delete mode 100644 week2/solutions/wk2d1_part3-4.py
+ delete mode 100644 week2/solutions/wk2d2_part2-1.py
+Nicholass-MacBook-Pro:solutions npng$ git push
+Counting objects: 4, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 410 bytes | 0 bytes/s, done.
+Total 4 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/nkpng2k/python-fundamentals.git
+   d5f5767..0815cb4  master -> master
+Nicholass-MacBook-Pro:solutions npng$ ls
+wk2d1_solutions	wk2d2_solutions
+Nicholass-MacBook-Pro:solutions npng$ cd wk2d2_solutions/
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ ls
+wk2d2_part2-1.py
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	../wk2d2_part2-1.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ git add wk2d2_part2-1.py 
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ git commit -m "saving changes"
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Untracked files:
+	../wk2d2_part2-1.py
+
+nothing added to commit but untracked files present
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ git push
+Everything up-to-date
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working tree clean
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ touch wk2d2_part1.py
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ ls
+wk2d2_part1.py		wk2d2_part2-1.py
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ clear
+
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ ls
+wk2d2_part1.py		wk2d2_part2-1.py
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ python wk2d2_part1.py 
+Please enter a list of numbers separated by a comma: 1,2,3,4,5
+Traceback (most recent call last):
+  File "wk2d2_part1.py", line 6, in <module>
+    num_list.pop[-1]
+TypeError: 'builtin_function_or_method' object has no attribute '__getitem__'
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ python wk2d2_part1.py 
+Please enter a list of numbers separated by a comma: 1,2,3,4,5
+5
+Traceback (most recent call last):
+  File "wk2d2_part1.py", line 8, in <module>
+    if i%2 == 0:
+NameError: name 'i' is not defined
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ python wk2d2_part1.py 
+Please enter a list of numbers separated by a comma: 1,2,3,4,5
+5
+Traceback (most recent call last):
+  File "wk2d2_part1.py", line 16, in <module>
+    my_tuple = (x, y)
+NameError: name 'y' is not defined
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ python wk2d2_part1.py 
+Please enter a list of numbers separated by a comma: 1,2,3,4,5
+5
+Please enter a list of numbers separated by a comma: 1,2,3,4,5
+5
+Please enter a list of numbers separated by a comma: lsdf
+1
+You did something wrong
+Please enter a list of numbers separated by a comma: slkdfj^CTraceback (most recent call last):
+  File "wk2d2_part1.py", line 10, in <module>
+    user_input = raw_input('Please enter a list of numbers separated by a comma: ')
+KeyboardInterrupt
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ python wk2d2_part1.py 
+Please enter a list of numbers separated by a comma: 1,2,3,4,5
+5
+[(1, None), (1, 2), (3, 2), (3, 4), (5, 4)]
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ python wk2d2_part1.py 
+Please enter a list of numbers separated by a comma: 1,2,3,4,5
+Traceback (most recent call last):
+  File "wk2d2_part1.py", line 13, in <module>
+    num_list = num_list.pop[-1]
+TypeError: 'builtin_function_or_method' object has no attribute '__getitem__'
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ python wk2d2_part1.py 
+Please enter a list of numbers separated by a comma: 1,2,3,4,5
+Traceback (most recent call last):
+  File "wk2d2_part1.py", line 13, in <module>
+    num_list = num_list.pop([-1])
+TypeError: an integer is required
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ python wk2d2_part1.py 
+Please enter a list of numbers separated by a comma: 1,2,3,4,5
+[(5, None)]
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ python wk2d2_part1.py 
+Please enter a list of numbers separated by a comma: 1,2,3,4,5
+5
+[(5, None)]
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ python wk2d2_part1.py 
+Please enter a list of numbers separated by a comma: 1,2,3,4,5
+You did something wrong
+Please enter a list of numbers separated by a comma: 1,2,3,4,5   
+You did something wrong
+Please enter a list of numbers separated by a comma: ^CTraceback (most recent call last):
+  File "wk2d2_part1.py", line 10, in <module>
+    user_input = raw_input('Please enter a list of numbers separated by a comma: ')
+KeyboardInterrupt
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ python wk2d2_part1.py 
+Please enter a list of numbers separated by a comma: 1,2,3,4,5
+You did something wrong
+Please enter a list of numbers separated by a comma: ^[[A^[[B^[[B^CTraceback (most recent call last):
+  File "wk2d2_part1.py", line 10, in <module>
+    user_input = raw_input('Please enter a list of numbers separated by a comma: ')
+KeyboardInterrupt
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ python wk2d2_part1.py 
+  File "wk2d2_part1.py", line 13
+    num_list = num_list.pop(:-1)
+                            ^
+SyntaxError: invalid syntax
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ python wk2d2_part1.py 
+  File "wk2d2_part1.py", line 13
+    num_list = num_list.pop([:-1])
+                             ^
+SyntaxError: invalid syntax
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ python wk2d2_part1.py 
+Please enter a list of numbers separated by a comma: 1,2,3,4,5
+['1', '2', '3', '4']
+[(1, None), (1, 2), (3, 2), (3, 4)]
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ python wk2d2_part1.py 
+Please enter a list of numbers separated by a comma: 1,2,3,4,5,6,7
+[(1, 2), (3, 4), (5, 6)]
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ clear
+
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ python wk2d2_part1.py 
+Please enter a list of numbers separated by a comma: 1,2,3,4,5,6,7
+[(1, 2), (3, 4), (5, 6)]
+Please enter a list of numbers separated by a comma: 2,3,4,5,6,7,8,9,10
+[('2', '3'), ('4', '5'), ('6', '7'), ('8', '9')]
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ python wk2d2_part1.py 
+Please enter a list of numbers separated by a comma: 1,2,3,4,5,6,7
+[(1, 2), (3, 4), (5, 6)]
+Please enter a list of numbers separated by a comma: 1,2,3,4,5,6,7
+[(1, 2), (3, 4), (5, 6)]
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ python wk2d2_part1.py 
+Please enter a list of numbers separated by a comma: 1:2:3:4:5:6:7
+[]
+Please enter a list of numbers separated by a comma: 1.2.3.4.5.6.7
+[]
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ python wk2d2_part1.py 
+Please enter a list of numbers separated by a comma: 1.2.3.4.5.6.7
+[]
+Please enter a list of numbers separated by a comma: 1.2.3.4.5.6.7
+['1.2.3.4.5.6.7']
+[]
+[]
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ python wk2d2_part1.py 
+Please enter a list of numbers separated by a comma: 1,2,3,4,5,6
+[(1, 2), (3, 4), (5, 6)]
+Please enter a list of numbers separated by a comma: 11,22,33,44,55,66,77,
+Traceback (most recent call last):
+  File "wk2d2_part1.py", line 35, in <module>
+    my_tuple = (int(x), int(y))
+ValueError: invalid literal for int() with base 10: ''
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ python wk2d2_part1.py 
+Please enter a list of numbers separated by a comma: 11,22,33,44,55
+[(11, 22), (33, 44)]
+Please enter a list of numbers separated by a comma: 22,33,44,55,66,77,88
+[(22, 33), (44, 55), (66, 77)]
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ ls
+wk2d2_part1.py		wk2d2_part2-1.py
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ touch wk2d2_part2-2.py
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ ls
+wk2d2_part1.py		wk2d2_part2-1.py	wk2d2_part2-2.py
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ state_dictionary = {'Colorado': 'Denver', 'Alaska': 'Juneau', 'California': 'Sacramento',
+-bash: state_dictionary: command not found
+Nicholass-MacBook-Pro:wk2d2_solutions npng$                        'Georgia': 'Atlanta', 'Kansas': 'Topeka', 'Nebraska': 'Lincoln',
+-bash: Georgia:: command not found
+Nicholass-MacBook-Pro:wk2d2_solutions npng$                        'Oregon': 'Salem', 'Texas': 'Austin', 'New York': 'Albany'}
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ ls
+wk2d2_part1.py		wk2d2_part2-1.py	wk2d2_part2-2.py
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ python wk2d2_part2-2.py 
+Please type a state you wish to know the capital of: Georgia
+Atlanta
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ python wk2d2_part2-2.py 
+Please type a state you wish to know the capital of: Dog
+Capital Unknown
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ python wk2d2_part2-2.py 
+Please type a state you wish to know the capital of: Georgia
+Please type a state you wish to know the capital of: ^CTraceback (most recent call last):
+  File "wk2d2_part2-2.py", line 6, in <module>
+    requested_state = raw_input('Please type a state you wish to know the capital of: ')
+KeyboardInterrupt
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ python wk2d2_part2-2.py 
+Please type a state you wish to know the capital of: Georgia
+Atlanta
+Would you like to search another capital? (Y/N) N
+ok goodbye
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ python wk2d2_part2-2.py 
+Please type a state you wish to know the capital of: Nebraska
+Lincoln
+Would you like to search another capital? (Y/N) y
+Please type a state you wish to know the capital of: Hawaii
+Capital Unknown
+Would you like to add this state and capital to the dicitonary? (Y/N) n
+ok
+Would you like to search another capital? (Y/N) y
+Please type a state you wish to know the capital of: Hawaii
+Capital Unknown
+Would you like to add this state and capital to the dicitonary? (Y/N) y
+What is %d's capital? Honolulu
+Traceback (most recent call last):
+  File "wk2d2_part2-2.py", line 14, in <module>
+    capital_q = raw_input("What is %d's capital? ") %requested_state
+TypeError: not all arguments converted during string formatting
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ python wk2d2_part2-2.py 
+Please type a state you wish to know the capital of: Hawaii
+Capital Unknown
+Would you like to add this state and capital to the dicitonary? (Y/N) y
+Traceback (most recent call last):
+  File "wk2d2_part2-2.py", line 14, in <module>
+    capital_q = raw_input("What is %d's capital? " %requested_state) 
+TypeError: %d format: a number is required, not str
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ python wk2d2_part2-2.py 
+Please type a state you wish to know the capital of: Hawaii
+Capital Unknown
+Would you like to add this state and capital to the dicitonary? (Y/N) y
+What is the capital? Honolulu
+Honolulu
+Would you like to search another capital? (Y/N) y
+Please type a state you wish to know the capital of: Hawaii
+Capital Unknown
+Would you like to add this state and capital to the dicitonary? (Y/N) n
+ok
+Would you like to search another capital? (Y/N) y
+Please type a state you wish to know the capital of: Hawaii 
+Capital Unknown
+Would you like to add this state and capital to the dicitonary? (Y/N) y
+What is the capital? sldkfjsdfsdf
+sldkfjsdfsdf
+Would you like to search another capital? (Y/N) y
+Please type a state you wish to know the capital of: ^CTraceback (most recent call last):
+  File "wk2d2_part2-2.py", line 6, in <module>
+    requested_state = raw_input('Please type a state you wish to know the capital of: ')
+KeyboardInterrupt
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ 
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ python wk2d2_part2-2.py 
+Please type a state you wish to know the capital of: Hawaii
+Capital Unknown
+Would you like to add this state and capital to the dicitonary? (Y/N) y
+What is the capital? Honolulu
+Honolulu
+Would you like to search another capital? (Y/N) y
+Please type a state you wish to know the capital of: Hawaii
+Honolulu
+Would you like to search another capital? (Y/N) y
+Please type a state you wish to know the capital of: New Jersey
+Capital Unknown
+Would you like to add this state and capital to the dicitonary? (Y/N) n
+ok
+Would you like to search another capital? (Y/N) n
+ok goodbye
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	wk2d2_part1.py
+	wk2d2_part2-2.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ git add wk2d2_part1.py 
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ git add wk2d2_part2-2.py 
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   wk2d2_part1.py
+	new file:   wk2d2_part2-2.py
+
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ touch wk2d2_part2-3.py
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ ls
+wk2d2_part1.py		wk2d2_part2-2.py
+wk2d2_part2-1.py	wk2d2_part2-3.py
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ python wk2d2_part2-3.py 
+Please enter a coordinate-word pair in format (x, y, word): 1,2,chicken
+(1, 2)
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ python wk2d2_part2-3.py 
+Traceback (most recent call last):
+  File "wk2d2_part2-3.py", line 6, in <module>
+    while user_input.lower() != 'search':
+AttributeError: 'NoneType' object has no attribute 'lower'
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ python wk2d2_part2-3.py 
+Please enter a coordinate-word pair in format (x, y, word): dog,chocolate,frog
+input for x,y coordinates were not integers.
+Please enter a coordinate-word pair in format (x, y, word): 1,2,chicken
+{(1, 2): 'chicken'}
+Please enter a coordinate-word pair in format (x, y, word): 2,3,ralph
+{(1, 2): 'chicken', (2, 3): 'ralph'}
+Please enter a coordinate-word pair in format (x, y, word): macaroni,cheese
+input for x,y coordinates were not integers.
+Please enter a coordinate-word pair in format (x, y, word): 4,5 sldfkj     
+input for x,y coordinates were not integers.
+Please enter a coordinate-word pair in format (x, y, word): 43,douglas
+input for x,y coordinates were not integers.
+Please enter a coordinate-word pair in format (x, y, word): 4,5, macaroni
+{(1, 2): 'chicken', (4, 5): ' macaroni', (2, 3): 'ralph'}
+Please enter a coordinate-word pair in format (x, y, word): search
+input for x,y coordinates were not integers.
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ python wk2d2_part2-3.py 
+Please enter a coordinate-word pair in format (x, y, word): search
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ python wk2d2_part2-3.py 
+Please enter a coordinate-word pair in format (x, y, word): 1,2,douglas
+Please enter a coordinate-word pair in format (x, y, word): 3,4,chicken
+Please enter a coordinate-word pair in format (x, y, word): 7,12,merci
+Please enter a coordinate-word pair in format (x, y, word): 11,100,french fries
+Please enter a coordinate-word pair in format (x, y, word): search
+Please enter a coordinate to search: 11,100
+french fries
+Please enter a coordinate to search: 1,2
+douglas
+Please enter a coordinate to search: 1,dog
+input for x,y coordinates were not integers
+Please enter a coordinate to search: 1,4
+Coordinate Not Found
+Please enter a coordinate to search: 3,4
+chicken
+Please enter a coordinate to search: 3,5
+Coordinate Not Found
+Please enter a coordinate to search: quit
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ ls
+wk2d2_part1.py		wk2d2_part2-2.py
+wk2d2_part2-1.py	wk2d2_part2-3.py
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   wk2d2_part1.py
+	new file:   wk2d2_part2-2.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	wk2d2_part2-3.py
+
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ git add wk2d2_part2-3.py 
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   wk2d2_part1.py
+	new file:   wk2d2_part2-2.py
+	new file:   wk2d2_part2-3.py
+
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ git commit -m "submitting solutions for wk2d2 parts1-2"
+[master 5145073] submitting solutions for wk2d2 parts1-2
+ Committer: Nicholas Png <npng@Nicholass-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 3 files changed, 110 insertions(+)
+ create mode 100644 week2/solutions/wk2d2_solutions/wk2d2_part1.py
+ create mode 100644 week2/solutions/wk2d2_solutions/wk2d2_part2-2.py
+ create mode 100644 week2/solutions/wk2d2_solutions/wk2d2_part2-3.py
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ git push
+Counting objects: 8, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (8/8), 1.68 KiB | 0 bytes/s, done.
+Total 8 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/nkpng2k/python-fundamentals.git
+   0815cb4..5145073  master -> master
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ touch wk2d2_part3-1.py
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ touch wk2d2_part3-2.py
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ touch wk2d2_part3-3.py
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ ls
+wk2d2_part1.py		wk2d2_part2-3.py	wk2d2_part3-3.py
+wk2d2_part2-1.py	wk2d2_part3-1.py
+wk2d2_part2-2.py	wk2d2_part3-2.py
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ python wk2d2_part3-1.py 
+Please enter a series of numbers separated by commas: 1,2,3,4,5,6
+Please enter another series of numbers separated by commas: 6,7,8,9
+set([1, 2, 3, 4, 5, 6]) set([8, 9, 6, 7])
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ python wk2d2_part3-1.py 
+Please enter a series of numbers separated by commas: 1,3,5,7,9,11
+Please enter another series of numbers separated by commas: 1,5,9,13
+set([1, 5, 9])
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ python wk2d2_part3-1.py 
+Please enter a series of numbers separated by commas: 1,2,3,4,5,6
+Please enter another series of numbers separated by commas: 2,4,6
+Traceback (most recent call last):
+  File "wk2d2_part3-1.py", line 20, in <module>
+    output = ', '.join(intersection)
+TypeError: sequence item 0: expected string, int found
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ python wk2d2_part3-1.py 
+Please enter a series of numbers separated by commas: 1,2,3,4,5,6
+Please enter another series of numbers separated by commas: 2,4,6,8
+s, e, t, (, [, 2, ,,  , 4, ,,  , 6, ], )
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ python wk2d2_part3-1.py 
+Please enter a series of numbers separated by commas: 1,2,3,4,5,6
+Traceback (most recent call last):
+  File "wk2d2_part3-1.py", line 9, in <module>
+    set1.add(int(item))
+AttributeError: 'dict' object has no attribute 'add'
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ python wk2d2_part3-1.py 
+Please enter a series of numbers separated by commas: 1,2,3,4,5,6
+Please enter another series of numbers separated by commas: 2,4,6,8
+s, e, t, (, [, ', 2, ', ,,  , ', 4, ', ,,  , ', 6, ', ], )
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ python wk2d2_part3-1.py 
+Please enter a series of numbers separated by commas: 1,2,3,4,5,6
+Please enter another series of numbers separated by commas: 2,4,6,8
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ python wk2d2_part3-1.py 
+Please enter a series of numbers separated by commas: 1,2,3,4,5,6
+Please enter another series of numbers separated by commas: 2,4,6
+2, 4, 6
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ python wk2d2_part3-1.py 
+Please enter a series of numbers separated by commas: 1,3,5,7,9,11,1,3,5
+Please enter another series of numbers separated by commas: 5,9,1
+9, 1, 5
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ python wk2d2_part3-1.py 
+Please enter a series of numbers separated by commas: 1,2,3,4,5,6,7,8,9,9
+Please enter another series of numbers separated by commas: 3,11,9,5
+3, 5, 9
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ ls
+wk2d2_part1.py		wk2d2_part2-3.py	wk2d2_part3-3.py
+wk2d2_part2-1.py	wk2d2_part3-1.py
+wk2d2_part2-2.py	wk2d2_part3-2.py
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ git add wk2d2_part3-1.py 
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   wk2d2_part3-1.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	wk2d2_part3-2.py
+	wk2d2_part3-3.py
+
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ git add wk2d2_part3-1.py 
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   wk2d2_part3-1.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	wk2d2_part3-2.py
+	wk2d2_part3-3.py
+
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ python wk2d2_part3-2.py 
+Please enter as set of words separated by commas: dog,chicken,frog,mammal,idiot
+chicken, dog, frog, idiot, mammal
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ python wk2d2_part3-2.py 
+Please enter as set of words separated by commas: mammal,mammal,dog,frog, frog, frog, grog, mercenary
+ frog,  grog,  mercenary, dog, frog, g, mammal
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ python wk2d2_part3-2.py 
+Please enter as set of words separated by commas:   frog, mammal,mammal,frog
+  frog, mammal,mammal,frog
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ python wk2d2_part3-2.py 
+Please enter as set of words separated by commas:   mammal, mammal,mammal
+mammal
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ python wk2d2_part3-2.py 
+Please enter as set of words separated by commas: frog, frog    ,frog, frog, dog,  dog,dog,dog   , idiot,idiot
+dog, frog, idiot
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ git add wk2d2_part3-2.py 
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   wk2d2_part3-1.py
+	new file:   wk2d2_part3-2.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	wk2d2_part3-3.py
+
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ git add wk2d2_part3-2.py 
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   wk2d2_part3-1.py
+	new file:   wk2d2_part3-2.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	wk2d2_part3-3.py
+
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ python wk2d2_part3-3.py 
+Please enter a word to add to vocabulary: apple
+set(['apple'])
+Please enter a word to add to vocabulary: v
+set(['apple', 'v'])
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ python wk2d2_part3-3.py 
+  File "wk2d2_part3-3.py", line 2
+    vocab_set = set{}
+                   ^
+SyntaxError: invalid syntax
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ python wk2d2_part3-3.py 
+Please enter a word to add to vocabulary: apple
+Please enter a word to add to vocabulary: v
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ python wk2d2_part3-3.py 
+Please enter a word to add to vocabulary: dog
+set([None, 'dog'])
+Please enter a word to add to vocabulary: v       
+set([None, 'dog', 'v'])
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ python wk2d2_part3-3.py 
+Please enter a word to add to vocabulary: dog
+Please enter a word to add to vocabulary: frog
+Please enter a word to add to vocabulary: v
+Please enter a word to add to vocabulary: q
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ python wk2d2_part3-3.py 
+Please enter a word to add to vocabulary: dog 
+Please enter a word to add to vocabulary: frog
+Please enter a word to add to vocabulary: chicken
+Please enter a word to add to vocabulary: v
+chicken dog frog
+Please enter a word to add to vocabulary: rambutan
+Traceback (most recent call last):
+  File "wk2d2_part3-3.py", line 18, in <module>
+    vocab_set.add(user_input)
+AttributeError: 'list' object has no attribute 'add'
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ python wk2d2_part3-3.py 
+Please enter a word to add to vocabulary: chicken
+Please enter a word to add to vocabulary: dog
+Please enter a word to add to vocabulary: rambutan
+Please enter a word to add to vocabulary: v
+chicken dog rambutan
+Please enter a word to add to vocabulary: frog
+Please enter a word to add to vocabulary: v
+chicken dog frog rambutan
+Please enter a word to add to vocabulary: abalone
+Please enter a word to add to vocabulary: iphone
+Please enter a word to add to vocabulary: v
+abalone chicken dog frog iphone rambutan
+Please enter a word to add to vocabulary: q
+Nicholass-MacBook-Pro:wk2d2_solutions npng$ 
