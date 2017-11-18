@@ -5,6 +5,7 @@ from os.path import isfile, join, splitext
 from collections import Counter
 from skimage import color, filters, io, transform, feature, exposure
 from scipy import stats
+from sklearn.decomposition import PCA
 
 
 class CardImageProcessing(object):
@@ -29,6 +30,7 @@ class CardImageProcessing(object):
         self.files = None
         self.file_names = None
         self.file_ext = None
+        self.pca = None
 
     def _read_in_images(self):
         raw_list = []
@@ -244,13 +246,19 @@ class CardImageProcessing(object):
     def reduce_dimensions(self, image_vectors):
         pass
 
-    def pipe_images(self, filepath):
+    def training_images_pipe(self, filepath):
+        """
+        Single method for piping Images
+        INTPUT: filepath to Images
+        OUTPUT: lists of vectorized cards and labels
+        """
         raw_imgs, grey_imgs = self.file_info(filepath)
         c_type, c_suit = self.generate_labels(delimiter='_')
         cropped_imgs = self.bounding_box_crop(grey_imgs)
         warped_imgs, tl_corner = self.rotate_images(cropped_imgs)
         vectorized_cards, hog_cards = self.vectorize_images(warped_imgs)
         vectorized_corner, hog_corner = self.vectorize_images(tl_corner)
+        self.pca = PCA(n_components=5)
 
         return vectorized_cards, vectorized_corner, c_type, c_suit
 
