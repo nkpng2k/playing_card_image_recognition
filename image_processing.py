@@ -6,6 +6,7 @@ from collections import Counter
 from skimage import color, filters, io, transform, feature, exposure
 from scipy import stats
 from sklearn.decomposition import PCA
+from sklearn.preprocessing import StandardScaler
 
 
 class CardImageProcessing(object):
@@ -30,7 +31,12 @@ class CardImageProcessing(object):
         self.files = None
         self.file_names = None
         self.file_ext = None
-        self.pca = None
+        self.corner_pca = None
+        self.card_pca = None
+        self.corner_scaler = None
+        self.card_scaler = None
+        self.num_corner_comp = None
+        self.num_card_comp = None
 
     def _read_in_images(self):
         raw_list = []
@@ -243,8 +249,31 @@ class CardImageProcessing(object):
             hog_images.append(hog_image)
         return vectorized_images, hog_images
 
-    def reduce_dimensions(self, image_vectors):
-        pass
+    def train_pca(self, corner_vectors, card_vectors):
+        self.corner_pca = PCA(n_components=25)
+        self.card_pca = PCA(n_components=25)
+
+        self.corner_scaler = StandardScaler().fit(corner_vectors)
+        self.card_scaler = StandardScaler().fit(card_vectors)
+
+        self.corner_pca.fit(corner_vectors)
+        self.card_pca.fit(card_vectors)
+
+        for i in xrange(self.corner_pca.n_components_):
+            if sum(self.corner_pca.explained_variance_ratio_[:i]) > 0.9:
+                self.num_corner_comp = i
+        for i in xrange(self.card_pca.n_components_):
+            if sum(self.card_pca.explained_variance_ratio_[:i]) > 0.9:
+                self.num_card_comp = i
+
+    def reduce_dimensions(self, corner_vectors, card_vectors):
+        trans_corner = self.card_scaler.transform(corner_vectors)
+        trans_card = self.corner_scaler.transform(card_vectors)
+
+        tl_pca = self.corner_pca.transform(trans_corner)
+        card_pca = self.card_pca.transform(trans_card)
+
+        return tl_pca[: self.num_corner_comp], card_pca[: self.num_card_comp]
 
     def training_images_pipe(self, filepath):
         """
@@ -258,13 +287,15 @@ class CardImageProcessing(object):
         warped_imgs, tl_corner = self.rotate_images(cropped_imgs)
         vectorized_cards, hog_cards = self.vectorize_images(warped_imgs)
         vectorized_corner, hog_corner = self.vectorize_images(tl_corner)
-        self.pca = PCA(n_components=5)
+        self.train_pca(vectorized_corner, vectorized_cards)
+        corner_pca, card_pca = self.reduce_dimensions(vectorized_corner,
+                                                      vectorized_cards)
 
         return vectorized_cards, vectorized_corner, c_type, c_suit
 
 
 if __name__ == "__main__":
-    filepath = '/Users/npng/galvanize/Dream_3_repository/samples'
+    filepath = '/Users/npng/galvanize/playing_card_image_recognition/samples'
     card_process = CardImageProcessing()
     raw_imgs, grey_imgs = card_process.file_info(filepath)
     c_type, c_suit = card_process.generate_labels(delimiter='_')
@@ -295,9 +326,10 @@ if __name__ == "__main__":
     ax1.set_adjustable('box-forced')
     plt.show()
 
-    filepath2 = '/Users/npng/galvanize/Dream_3_repository/card_images'
+    filepath2 = '/Users/npng/galvanize/playing_card_image_recognition/card_images'
     card_process = CardImageProcessing()
     raw_imgs, grey_imgs = card_process.file_info(filepath2)
+    results = card_process.training_images_pipe(filepath2)
     c_type, c_suit = card_process.generate_labels(delimiter='_')
     cropped_imgs = card_process.bounding_box_crop(grey_imgs)
     warped_imgs, tl_corner = card_process.rotate_images(cropped_imgs)
@@ -307,8 +339,6 @@ if __name__ == "__main__":
     io.show()
     io.imshow(warped_imgs[20])
     io.show()
-
-    c_type
 
 """
 bottom of page
