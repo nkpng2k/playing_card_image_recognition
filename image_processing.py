@@ -250,8 +250,8 @@ class CardImageProcessing(object):
         return vectorized_images, hog_images
 
     def train_pca(self, corner_vectors, card_vectors):
-        self.corner_pca = PCA(n_components=25)
-        self.card_pca = PCA(n_components=25)
+        self.corner_pca = PCA(n_components=10)
+        self.card_pca = PCA(n_components=10)
 
         self.corner_scaler = StandardScaler().fit(corner_vectors)
         self.card_scaler = StandardScaler().fit(card_vectors)
@@ -291,7 +291,7 @@ class CardImageProcessing(object):
         corner_pca, card_pca = self.reduce_dimensions(vectorized_corner,
                                                       vectorized_cards)
 
-        return vectorized_cards, vectorized_corner, c_type, c_suit
+        return card_pca, corner_pca, c_type, c_suit
 
 
 if __name__ == "__main__":
@@ -326,10 +326,10 @@ if __name__ == "__main__":
     ax1.set_adjustable('box-forced')
     plt.show()
 
-    filepath2 = '/Users/npng/galvanize/playing_card_image_recognition/card_images'
+    fp2 = '/Users/npng/galvanize/playing_card_image_recognition/card_images'
     card_process = CardImageProcessing()
-    raw_imgs, grey_imgs = card_process.file_info(filepath2)
-    results = card_process.training_images_pipe(filepath2)
+    raw_imgs, grey_imgs = card_process.file_info(fp2)
+    results = card_process.training_images_pipe(fp2)
     c_type, c_suit = card_process.generate_labels(delimiter='_')
     cropped_imgs = card_process.bounding_box_crop(grey_imgs)
     warped_imgs, tl_corner = card_process.rotate_images(cropped_imgs)
