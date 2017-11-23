@@ -250,6 +250,9 @@ class CardImageProcessing(object):
         return vectorized_images, hog_images
 
     def train_pca(self, corner_vectors, card_vectors):
+        corner_vectors = np.array(corner_vectors)
+        card_vectors = np.array(card_vectors)
+
         self.corner_pca = PCA(n_components=10)
         self.card_pca = PCA(n_components=10)
 
@@ -267,6 +270,9 @@ class CardImageProcessing(object):
                 self.num_card_comp = i
 
     def reduce_dimensions(self, corner_vectors, card_vectors):
+        corner_vectors = np.array(corner_vectors)
+        card_vectors = np.array(card_vectors)
+
         trans_corner = self.card_scaler.transform(corner_vectors)
         trans_card = self.corner_scaler.transform(card_vectors)
 
