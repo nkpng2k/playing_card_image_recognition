@@ -332,7 +332,7 @@ if __name__ == "__main__":
     ax1.set_adjustable('box-forced')
     plt.show()
 
-    fp2 = '/Users/npng/galvanize/playing_card_image_recognition/card_images'
+    fp2 = '/Users/npng/galvanize/playing_card_image_recognition/card_photos'
     card_process = CardImageProcessing()
     raw_imgs, grey_imgs = card_process.file_info(fp2)
     results = card_process.training_images_pipe(fp2)
@@ -344,6 +344,8 @@ if __name__ == "__main__":
     io.imshow(tl_corner[20])
     io.show()
     io.imshow(warped_imgs[20])
+    io.show()
+    io.imshow(cropped_imgs[2])
     io.show()
 
 """
