@@ -27,14 +27,18 @@ have the model identify it and count
 #read in sample with grey scale -- Numpy values 0 = black, 1 = white
 card_image = io.imread('samples/IMG_1197.JPG', as_grey = True)
 card_image_2 = io.imread('samples/IMG_1198.JPG', as_grey = True)
+card_photo = io.imread('card_photos/j_h.JPG', as_grey=True)
 
 # filters.thresholding.threshold_minimum finds minimum value to separate edges
-edges = filters.threshold_minimum(card_image)
-filtered = card_image.copy()
+edges = filters.threshold_minimum(card_photo)
+filtered = card_photo.copy()
 filtered[filtered < edges] = 0
 edges_2 = filters.threshold_minimum(card_image_2)
 filtered_2 = card_image_2.copy()
 filtered_2[filtered_2 < edges] = 0
+
+io.imshow(filtered)
+io.show()
 
 coords = np.argwhere(filtered > 0.9)
 miny, minx = coords.min(axis = 0)
@@ -49,8 +53,8 @@ maxy, maxx = coords.max(axis = 0)
 cropped_2 = filtered_2[miny:maxy,minx:maxx]
 
 
-edges = feature.canny(cropped_2, low_threshold = 0.2, high_threshold = 1)
-lines = transform.probabilistic_hough_line(edges, threshold=50, line_length=275,line_gap=10)
+edges = feature.canny(card_photo)
+lines = transform.probabilistic_hough_line(edges, threshold=50, line_length=500, line_gap=10)
 len(lines)
 #NOTE: use np.polyfit(), np.roots() of two polyfits will return the intersections
 
@@ -126,16 +130,26 @@ ax2.set_title('Histogram of Oriented Gradients')
 ax1.set_adjustable('box-forced')
 plt.show()
 
-
-
-
 fig, ax = plt.subplots()
-ax.imshow(cropped, cmap = plt.cm.gray)
+ax.imshow(card_photo, cmap = plt.cm.gray)
 for line in lines:
     p0, p1 = line
     ax.plot((p0[0], p1[0]), (p0[1], p1[1]))
 ax.scatter(xs, ys)
 plt.show()
+
+
+
+
+
+
+
+
+
+
+"""
+Double card stuff
+"""
 
 dbl_card = io.imread('samples/IMG_1199.jpg', as_grey = True)
 
@@ -162,31 +176,6 @@ ax.axis('image')
 ax.set_xticks([])
 ax.set_yticks([])
 plt.show()
-
-
-
-#NOTE: I now have cv2. Will this help?
-#NOTE: will need to create your own training data, vectorize the data and label
-
-import cv2
-
-test = cv2.imread('card_images/6_d.bmp')
-test_jpg = cv2.imread('samples/IMG_1197.jpg')
-
-im = cv2.imread('samples/IMG_1197.jpg')
-gray = cv2.cvtColor(im,cv2.COLOR_BGR2GRAY)
-blur = cv2.GaussianBlur(gray,(1,1),1000)
-flag, thresh = cv2.threshold(blur, 120, 255, cv2.THRESH_BINARY)
-
-contours = cv2.findContours(thresh,1,2)
-cnt = contours[0]
-cv2.contourArea(cnt)
-areas = []
-for contour in contours:
-    area = cv2.contourArea(contour)
-    areas.append(area)
-
-
 """
 Bottom of Page
 """
